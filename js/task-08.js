@@ -9,20 +9,20 @@ function formSubmint(event) {
   const password = event.currentTarget.elements.password.value;
 
   if (mail === '' || password === '') {
-    console.log('Всі поля повинні бути заповнені.');
+    alert('Всі поля повинні бути заповнені.');
   } else {
     const formObj = {
       mail,
       password,
+
       reset() {
         event.currentTarget.elements.email.value = '';
         event.currentTarget.elements.password.value = '';
       },
     };
 
-    console.log(formObj.mail, formObj.password);
+    console.log(formObj);
 
     formObj.reset();
   }
 }
-
