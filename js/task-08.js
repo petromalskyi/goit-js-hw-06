@@ -14,15 +14,15 @@ function formSubmint(event) {
     const formObj = {
       mail,
       password,
-
-      reset() {
-        event.currentTarget.elements.email.value = '';
-        event.currentTarget.elements.password.value = '';
-      },
     };
 
+    function reset() {
+      event.currentTarget.elements.email.value = '';
+      event.currentTarget.elements.password.value = '';
+    }
+      
     console.log(formObj);
 
-    formObj.reset();
+    reset();
   }
 }
